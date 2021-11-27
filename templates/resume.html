@@ -1,3 +1,10 @@
+{% extends 'bootstrap/base.html' %}  #声明继承
+{% block navbar %}
+    {{ nav.top.render() }}
+{% endblock %}
+{% block title %}{{ title_name }}{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -284,3 +291,4 @@
   </table>
 </body>
 </html>
+{% endblock content %}

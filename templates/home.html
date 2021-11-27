@@ -1,0 +1,15 @@
+{% extends 'bootstrap/base.html' %}  #声明继承
+{% block navbar %}
+    {{ nav.top.render() }}
+{% endblock %}
+{% block title %}{{ title_name }}{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        <div class="container">
+            <h1>{{ self.title() }}</h1>
+        </div>
+    </div>
+{% endblock content %}
+
+
