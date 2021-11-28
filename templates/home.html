@@ -3,11 +3,17 @@
     {{ nav.top.render() }}
 {% endblock %}
 {% block title %}{{ title_name }}{% endblock %}
-
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet"
+          href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+{% endblock %}
 {% block content %}
     <div class="page-header">
         <div class="container">
             <h1>{{ self.title() }}</h1>
+            <img src="./static/homebg.png" alt="test">
+
         </div>
     </div>
 {% endblock content %}
