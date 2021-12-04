@@ -9,13 +9,32 @@
           href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 {% endblock %}
 {% block content %}
-    <div class="page-header">
-        <div class="container">
-            <h1>{{ self.title() }}</h1>
-            <img src="./static/homebg.png" alt="test">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-        </div>
+<audio src="./static/music1.mp3"  autoplay="autoplay"> </audio>
+
+</head>
+<body background="./static/homebg.png" style="background-repeat:no-repeat;
+background-size:100% 100%;
+background-attachment: fixed;
+">
+
+
+
+
+  <div class="page-header">
+    <div class="container">
+        <h1>{{ self.title() }}</h1>
+<!--        <img src="./static/homebg.png" alt="test">-->
+
     </div>
+</div>
+</body>
+</html>
 {% endblock content %}
-
-
