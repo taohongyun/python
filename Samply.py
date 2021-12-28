@@ -27,7 +27,7 @@ nav.register_element('top',Navbar(u'个人网站',
                                              Separator(),
                                              View(u'软件测试用例学习', 'study_case'),
                                              Separator(),
-                                             View(u'缺陷报告学习', 'study_defect'),
+                                             View(u'缺陷报告学习总结', 'study_defect'),
                                              Separator(),
                                              View(u'软件测试流程及分类', 'study_test'),
 
